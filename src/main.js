@@ -2,15 +2,15 @@ import { Conversation } from "@elevenlabs/client";
 import { VOICES } from "./voices.js";
 import "./styles.css";
 
-const AGENT_ID = "agent_2401kpdcfbczeznsr4bkmr97c7p1";
+const AGENT_ID = "agent_4101m4tn56vbfjgb8a5s771fffcg";
 const BRANCH_ID =
   import.meta.env.VITE_BRANCH_ID === "false"
     ? ""
-    : (import.meta.env.VITE_BRANCH_ID ?? "agtbrch_7601kpdcfd0de3prknkcrzz1z04f");
+    : (import.meta.env.VITE_BRANCH_ID ?? "agtbrch_1701m4tn59arfkgssetg89b9a09q");
 
 const CONVAI_TOKEN_SOURCE = "js_sdk";
 const CONVAI_TOKEN_VERSION = "1.2.1";
-const PROMPT_STORAGE_KEY = "elevenlabs-voice-test:system-prompt-draft";
+const PROMPT_STORAGE_KEY = "elevenlabs-voice-test:system-prompt-draft:pko";
 
 const voiceSelect = document.getElementById("voiceSelect");
 const systemPrompt = document.getElementById("systemPrompt");
@@ -32,6 +32,8 @@ for (const v of VOICES) {
 }
 
 let conversation = null;
+
+localStorage.removeItem("elevenlabs-voice-test:system-prompt-draft");
 
 const savedPrompt = localStorage.getItem(PROMPT_STORAGE_KEY);
 if (savedPrompt !== null) {

@@ -5,9 +5,9 @@ const app = express();
 const PORT = Number(process.env.TOKEN_SERVER_PORT || 3456);
 
 const AGENT_ID =
-  process.env.AGENT_ID || "agent_2401kpdcfbczeznsr4bkmr97c7p1";
+  process.env.AGENT_ID || "agent_4101m4tn56vbfjgb8a5s771fffcg";
 const BRANCH_ID =
-  process.env.BRANCH_ID || "agtbrch_7601kpdcfd0de3prknkcrzz1z04f";
+  process.env.BRANCH_ID || "agtbrch_1701m4tn59arfkgssetg89b9a09q";
 
 /**
  * WebRTC token with optional branch_id (see API: GET /v1/convai/conversation/token).
