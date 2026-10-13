@@ -131,7 +131,7 @@ function isGitHubPagesHost() {
 function buildCallbacks() {
   return {
     onConnect: () => {
-      connStatus.textContent = "Connected";
+      connStatus.textContent = "Połączono";
       stopBtn.disabled = false;
       voiceSelect.disabled = true;
       systemPrompt.disabled = true;
@@ -139,7 +139,7 @@ function buildCallbacks() {
       setCallUi("active");
     },
     onDisconnect: () => {
-      connStatus.textContent = "Disconnected";
+      connStatus.textContent = "Rozłączono";
       startBtn.disabled = false;
       stopBtn.disabled = true;
       modeStatus.textContent = "—";
@@ -154,10 +154,10 @@ function buildCallbacks() {
       showError(typeof err === "string" ? err : err?.message || String(err));
     },
     onModeChange: ({ mode }) => {
-      modeStatus.textContent = mode === "speaking" ? "Speaking" : "Listening";
+      modeStatus.textContent = mode === "speaking" ? "Mówi" : "Słucha";
       if (callSurface?.dataset.state === "active" && modeLine) {
         modeLine.textContent =
-          mode === "speaking" ? "Agent is speaking — wait for your turn." : "Listening — go ahead and talk.";
+          mode === "speaking" ? "Agent mówi — poczekaj na swoją kolej." : "Słucham — śmiało, mów.";
       }
     },
   };
@@ -168,14 +168,14 @@ function setCallUi(state) {
   callSurface.dataset.state = state;
   if (!callLabel || !modeLine) return;
   if (state === "idle") {
-    callLabel.textContent = "Ready to connect";
-    modeLine.textContent = "Microphone access is requested when you start.";
+    callLabel.textContent = "Gotowe do połączenia";
+    modeLine.textContent = "Przy rozpoczęciu poprosimy o dostęp do mikrofonu.";
   } else if (state === "connecting") {
-    callLabel.textContent = "Connecting…";
-    modeLine.textContent = "Grant microphone access if the browser asks.";
+    callLabel.textContent = "Łączenie…";
+    modeLine.textContent = "Zezwól na dostęp do mikrofonu, jeśli przeglądarka o to poprosi.";
   } else if (state === "active") {
-    callLabel.textContent = "Live session";
-    modeLine.textContent = "Speak naturally — the agent follows the system prompt on the left.";
+    callLabel.textContent = "Sesja na żywo";
+    modeLine.textContent = "Mów naturalnie — agent postępuje zgodnie z promptem systemowym po lewej.";
   }
 }
 

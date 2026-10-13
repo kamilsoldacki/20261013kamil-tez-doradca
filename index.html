@@ -48,10 +48,10 @@
             <div class="card-head">
               <h2 id="prompt-heading">System prompt</h2>
               <p class="card-lead">
-                Edit the persona and behaviour before you connect. Changes apply only to the next call —
-                nothing is saved to the agent in ElevenLabs.
+                Edytuj personę i zachowanie przed połączeniem. Zmiany dotyczą tylko następnej rozmowy —
+                nic nie jest zapisywane w agencie w ElevenLabs.
               </p>
-              <button type="button" id="resetPromptBtn" class="btn-link">Reset to default</button>
+              <button type="button" id="resetPromptBtn" class="btn-link">Przywróć domyślne</button>
             </div>
             <div class="prompt-scroll">
               <label class="visually-hidden" for="systemPrompt">System prompt</label>
@@ -83,25 +83,25 @@ Jeśli rozmówca odmówi albo powie, że nie rozmawiał z konsultantem, dziękuj
 </textarea>
             </div>
           </div>
-          <p class="card-model-foot" aria-label="LLM: Qwen3.5-397B-A17B">LLM: Qwen3.5-397B-A17B</p>
+          <p class="card-model-foot" aria-label="Qwen3.5-397B-A17B">Qwen3.5-397B-A17B</p>
         </aside>
 
         <main class="card control-card">
           <div class="card-column-body">
             <section class="voice-block" aria-labelledby="voice-heading">
-              <h2 id="voice-heading">Voice</h2>
+              <h2 id="voice-heading">Głos</h2>
               <p class="field-hint">
-                Pick the voice the agent speaks with before you connect. To switch voices, end the call first —
-                it can’t be changed during a session.
+                Wybierz głos, którym agent mówi, zanim się połączysz. Aby zmienić głos, najpierw zakończ rozmowę —
+                nie da się go zmienić w trakcie sesji.
               </p>
               <label class="select-wrap">
-                <span class="visually-hidden">Voice</span>
+                <span class="visually-hidden">Głos</span>
                 <select id="voiceSelect" class="select"></select>
               </label>
             </section>
 
             <section class="call-block" aria-labelledby="call-heading">
-            <h2 id="call-heading" class="visually-hidden">Session</h2>
+            <h2 id="call-heading" class="visually-hidden">Sesja</h2>
             <div class="call-surface" data-state="idle">
               <div class="call-visual" aria-hidden="true">
                 <div class="call-ring"></div>
@@ -119,24 +119,24 @@ Jeśli rozmówca odmówi albo powie, że nie rozmawiał z konsultantem, dziękuj
                   </svg>
                 </div>
               </div>
-              <p class="call-label" id="callLabel">Ready to connect</p>
-              <p class="call-sub" id="modeLine">Microphone access is requested when you start.</p>
+              <p class="call-label" id="callLabel">Gotowe do połączenia</p>
+              <p class="call-sub" id="modeLine">Przy rozpoczęciu poprosimy o dostęp do mikrofonu.</p>
               <div class="call-actions">
                 <button type="button" id="startBtn" class="btn btn-primary">
                   <span class="btn-icon" aria-hidden="true">●</span>
-                  Start call
+                  Rozpocznij rozmowę
                 </button>
-                <button type="button" id="stopBtn" class="btn btn-ghost" disabled>End call</button>
+                <button type="button" id="stopBtn" class="btn btn-ghost" disabled>Zakończ rozmowę</button>
               </div>
             </div>
 
             <dl class="metrics">
               <div>
-                <dt>Connection</dt>
-                <dd id="connStatus">Disconnected</dd>
+                <dt>Połączenie</dt>
+                <dd id="connStatus">Rozłączono</dd>
               </div>
               <div>
-                <dt>Mode</dt>
+                <dt>Tryb</dt>
                 <dd id="modeStatus">—</dd>
               </div>
             </dl>
@@ -144,7 +144,7 @@ Jeśli rozmówca odmówi albo powie, że nie rozmawiał z konsultantem, dziękuj
               <p id="errorBox" class="error" hidden></p>
             </section>
           </div>
-          <p class="card-model-foot" aria-label="ElevenLabs: Eleven v4 Turbo">ElevenLabs: Eleven v4 Turbo</p>
+          <p class="card-model-foot" aria-label="Eleven v4 Turbo">Eleven v4 Turbo</p>
         </main>
       </div>
     </div>
