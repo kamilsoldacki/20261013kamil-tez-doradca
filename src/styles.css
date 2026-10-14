@@ -448,7 +448,7 @@ body {
 
 .call-label {
   margin: 0 0 0.35rem;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
   line-height: 1.2;
   font-weight: 600;
   color: var(--text);
@@ -457,7 +457,7 @@ body {
 .call-sub {
   margin: 0 auto 1.25rem;
   max-width: 30ch;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
   color: var(--text);
   line-height: 1.4;
@@ -476,7 +476,7 @@ body {
   justify-content: center;
   gap: 0.55rem;
   font-family: var(--font);
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.25;
   font-weight: 400;
   padding: 0.7rem 1.5rem;
@@ -555,7 +555,7 @@ body {
 }
 
 .metrics dt {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: var(--muted);
   margin: 0;
 }
@@ -563,7 +563,7 @@ body {
 .metrics dd {
   margin: 0.2rem 0 0;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: var(--navy);
 }
 
