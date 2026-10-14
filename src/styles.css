@@ -45,7 +45,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--font);
-  font-size: 16px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--text);
@@ -126,7 +126,7 @@ body {
 }
 
 .brand-sub {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   color: var(--muted);
   font-weight: 400;
 }
@@ -211,7 +211,7 @@ body {
 .card-head h2,
 .voice-block h2 {
   margin: 0 0 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
   line-height: 1.2;
   font-weight: 600;
   color: var(--text);
@@ -219,7 +219,7 @@ body {
 
 .card-lead {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
   color: var(--text);
   line-height: 1.5;
@@ -274,7 +274,7 @@ body {
   border: 0;
   background: none;
   font-family: var(--font);
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: var(--navy);
   text-decoration: underline;
@@ -300,7 +300,7 @@ body {
   border-top: 1px solid var(--stroke);
   background: var(--bg);
   font-family: var(--font);
-  font-size: 0.875rem;
+  font-size: 0.6875rem;
   line-height: 1.4;
   color: var(--muted);
   flex-shrink: 0;
@@ -314,7 +314,7 @@ body {
 
 .field-hint {
   margin: 0 0 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
   color: var(--text);
   line-height: 1.5;
@@ -329,7 +329,7 @@ body {
   min-height: 48px;
   appearance: none;
   font-family: var(--font);
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 0.7rem 2.75rem 0.7rem 1rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--stroke-strong);
@@ -584,7 +584,7 @@ code {
   border: 1px solid rgba(234, 22, 54, 0.35);
   border-left: 4px solid var(--red);
   color: var(--danger);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.45;
 }
 
