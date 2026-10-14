@@ -7,7 +7,14 @@ const IDS = [
   "lndSlPuysms9uPow4Bjs",
 ];
 
+const NAMES = {
+  "8YBs0SVfPAuVYiKvbXnB": "Mikołaj",
+  "qWdWoJcQ7XPZz9iX0XUW": "Bartłomiej",
+  "lndSlPuysms9uPow4Bjs": "Janusz",
+};
+
 function shortLabel(id, index) {
+  if (NAMES[id]) return NAMES[id];
   const n = String(index + 1).padStart(2, "0");
   const hint = id.length > 14 ? `${id.slice(0, 14)}…` : id;
   return `Voice ${n} · ${hint}`;
